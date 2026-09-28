@@ -92,8 +92,8 @@ class OnlineSalesRegisterCollector:
     def get_telephone_number(self, telephone_number):
         str_tlf = str(telephone_number)
         try:
-            tel_str = str(telephone_number) 
-            if not tel_str.isdigit(): 
+            tel_str = str(telephone_number)   
+            if not tel_str.isdigit():         #тут мне подсказала нейронка но я пытался
                 raise ValueError('Необходимо ввести цифры') 
             if len(tel_str) != 10: 
                 raise ValueError('Необходимо ввести 10 цифр после "+7"')
@@ -112,7 +112,7 @@ cheque.add_item_to_cheque('чипсы')
 cheque.add_item_to_cheque('чипсы')
 cheque.add_item_to_cheque('чипсы')
 cheque.add_item_to_cheque('молоко')
-cheque.add_item_to_cheque('чипсы')
+cheque.add_item_to_cheque('кефир')
 cheque.add_item_to_cheque('кефир')
 cheque.add_item_to_cheque('молоко')
 cheque.add_item_to_cheque('чипсы')
